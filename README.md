@@ -28,8 +28,11 @@ yarn precommit
 ```
 ### [Generators](https://github.com/visormatt/generator-react-up)
 ```JS
-// Create a ES6 React component
+// Create React component
 yo react-up <ComponentName> class
+
+// Create Redux module
+yo react-up <ModuleName> module
 ```
 
 

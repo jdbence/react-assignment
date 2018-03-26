@@ -1,6 +1,6 @@
 // Setup any preferred defaults
 const TEST_EXT = '.test.js';
-const TEST_FOLDER = '_test';
+const TEST_FOLDER = '__tests__';
 
 /**
  * @description Modify the existing configurations or create your own
@@ -18,17 +18,39 @@ const mappings = (data = {}) => {
   return {
 
     /**
-     * @example yo react-up <ReactComponentName> class
+     * @example yo react-up <ComponentName> class
      */
     class: {
       description: 'React Component',
       detail: 'Create a `React Class` w/ testing folder + stub.',
       files: [
         ['_test/index.js', `/src/components/${ name }/${ TEST_FOLDER }/${ name }${ TEST_EXT }`],
-        //['common/package.json', `/src/components/${ name }/package.json`],
-        //['common/styles.scss', `/src/components/${ name }/styles.scss`],
         ['component/index.js', `/src/components/${ name }/index.js`],
         ['component/class.js', `/src/components/${ name }/${ name }.js`]
+      ]
+    },
+    
+    /**
+     * @example yo react-up <ModuleName> module
+     */
+    module: {
+      description: 'Redux Module',
+      detail: 'Create a `Redux Module`',
+      files: [
+        ['component/index.js', `/src/modules/${ name }/index.js`],
+        ['component/module.js', `/src/modules/${ name }/${ name }.js`]
+      ]
+    },
+    
+    /**
+     * @example yo react-up <ContainerName> container
+     */
+    container: {
+      description: 'Redux Container',
+      detail: 'Create a `Redux Container`',
+      files: [
+        ['component/container.index.js', `/src/components/${ name }/index.js`],
+        ['component/container.js', `/src/components/${ name }/${ name }Container.js`]
       ]
     },
 
