@@ -33,6 +33,9 @@ yo react-up <ComponentName> class
 
 // Create Redux module
 yo react-up <ModuleName> module
+
+// Create Redux container
+yo react-up <ContainerName> container
 ```
 
 
