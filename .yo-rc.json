@@ -1,0 +1,9 @@
+{
+  "generator-react-up": {
+    "domain": "Joshua Bence",
+    "package": "/home/ubuntu/.nvm/versions/node/v9.9.0/lib/node_modules/generator-react-up/generators/setup",
+    "root": "/home/ubuntu/workspace",
+    "relative": true,
+    "templates": "_templates/"
+  }
+}
